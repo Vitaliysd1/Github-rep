@@ -1,0 +1,360 @@
+@media (max-width: 800px){
+
+  
+    .greeting-text{
+      width: 275px;
+      height: 204px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-right: calc(7.8125%/2);
+      margin-left: 7.8125%;
+    }
+
+    .greeting-text-options{
+      line-height: 117%;
+      font-weight: 500;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: auto;
+      margin-bottom: auto;
+      font-size: 40px;
+      color: white;
+    }
+
+
+    .spinner {
+      margin-top:-10px;
+      margin-bottom: auto;
+      position: relative;
+      display: flex;
+      height: 40px;
+      overflow: hidden;
+      color: rgb(255, 255, 255);
+    }
+    .boxes {
+      transform: translateY(0);
+      transition: transform 6s ease-in-out;
+      animation-name: slot-machine;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-duration: 6s;
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      font-size: 40px;
+      height: 40px;
+    }
+    @keyframes slot-machine {
+      0% {
+        transform: translateY(-120px);
+        color: #D9D9D9;
+      }
+    
+      10% {
+        transform: translateY(-120px);
+        color: #D9D9D9;
+      }
+      27% {
+        transform: translateY(-80px);
+        color: #F9A7AC;
+      }
+      44% {
+        transform: translateY(-80px);
+        color: #F9A7AC;
+      }
+      61% {
+        transform: translateY(-40px);
+        color: #A5E2C4;
+      }
+    
+      78% {
+        transform: translateY(-40px);
+        color: #A5E2C4;
+      }
+    
+      93% {
+        transform: translateY(0);
+        color: #D9D9D9;
+      }
+      100% {
+        transform: translateY(0);
+        color: #D9D9D9;
+      }
+    }
+    .arrow-house-position-div{
+      width: 275px;
+      margin-top: 20px;
+      position: relative;
+      display: flex;
+      margin-right:7.8125%;
+      margin-left: 7.8125%;
+      height: 632px;
+      flex-direction: column-reverse;
+    }
+  
+    .house-background-block{
+      position: relative;
+      display: flex;
+      height: 355px;
+      width: 275px;
+      background-color: #D9D9D9;
+      margin-left:0;
+      margin-right: auto;
+      animation-name: animatedText-back;
+      animation-duration: 6s;
+      animation-timing-function: linear;
+      animation-iteration-count:infinite;
+    }
+    .house-background-block img{
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 275px;
+      margin-bottom: 0;
+      margin-top: auto;
+    }
+
+    .arrow-full{
+      position:absolute;
+      display: flex;
+      flex-direction: column;
+      width: 0;
+      height: 0;
+      margin-top:0;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    
+    .arrow-stick{
+      position: absolute;
+      display: flex;
+      height: 0;
+      width: 0;
+      background-color: #D9D9D9;
+    }
+    
+    .arrow-triangle{
+      position: absolute;
+      display: flex;
+      width: 0;
+      height: 0;
+      border-left: 0px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 0px solid #D9D9D9;
+    }
+
+    .under-arrow-text{
+      position: relative;
+      display: flex;
+      width: 275px;
+      height: 249px;
+      margin-right: 0px;
+      margin-top: 0px;
+    }
+    
+    .under-arrow-text p{
+      position: relative;
+      display: flex;
+      margin-left: 0;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 130%;
+      color: #D9D9D9;
+    }
+
+
+    .navbar-position{
+      position: relative;
+      display: flex;
+      width: 84.375%;
+      height: 14px;
+      margin-top: 53px;
+      margin-left:35px;
+      margin-right:auto;
+  
+    }
+    .menu-time-text{
+      display: flex;
+      color: #E7E8E7;
+      margin-top: 0;
+      margin-bottom: auto;
+      margin-left: 0;
+      margin-right: auto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 130%;
+  
+    }
+  
+    .menu-time-text p{
+      margin-top: 0;
+      margin-left: 0;
+    }
+  
+    .menu-position{
+      position: relative;
+      display: flex;
+      margin-right: 0;
+      margin-left:auto;
+    }
+  
+    .punct-menu-position{
+      position: relative;
+      display: flex;
+      margin-left:20px;
+      font-weight: 400;
+      display: none;
+    }
+  
+    .punct-menu-position a{
+      text-decoration: none;
+      color: #E7E8E7;
+      font-size: 11px;
+     
+    }
+    .dropdown{
+     display: block;
+    }
+
+
+
+    .dropbtn {
+      background-color: #1D1D1D;
+  
+      width: 40px;
+      height: 14px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+      background-color:#1D1D1D;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+      position: relative;
+      display:block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color:#1D1D1D;
+      min-width: 375px;
+      flex-direction: column;
+      left:-50px;
+      box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+      z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      position: relative;
+      color: #E7E8E7;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  /* Change color of dropdown links on hover */
+
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  .bottom-line-adop-menu{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: #E7E8E7;
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .top-line-adop-menu{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: #E7E8E7;
+    margin-top: 0;
+    margin-bottom: auto;
+  }
+  .punct-menu-position-adaptive{
+    position: relative;
+    display: flex;
+  }
+
+  .punct-menu-position-adaptive:hover {background-color: rgb(49, 49, 49)}
+
+  .footer-client{
+    display: flex;
+    position: relative;
+    width: 330px;
+    margin-top:27px;
+    border: 1px solid #797979;
+    margin-top:82px;
+    margin-left:12px;
+    margin-right: 0px;
+  }
+  
+  .clients-footer{
+    position: relative;
+    display: flex;
+    border: 0px solid #797979;
+    width: 330px;
+    height: 21px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+  .our-clients-text p{
+    position: relative;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+    color:#E7E8E7;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  
+  .line-clients-way{
+    position: relative;
+    display: flex;
+    margin-top:auto;
+    margin-bottom: auto;
+    width: 186px;
+    height: 10px;
+    border-top:2px solid #E7E8E7;
+    border-right:2px solid #E7E8E7;
+  }
+  
+  .arrow-clients-way{
+    position: absolute;
+    display: block;
+    font-size: 11px;
+    color:#E7E8E7;
+    top:10px;
+    right: -3px;
+  }
+  
+  }
+
